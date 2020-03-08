@@ -40,7 +40,13 @@ beforeEach(() => {
 });
 
 test('convert 1 USD to EUR', async () => {
-  throw new Error('test not yet defined... remove the throw and write your test here');
+  const opts = {
+  'amount': 1,           //Amount of money you want to convert or default value
+  'from': ('USD'),   //Currency you want to convert or default value
+  'to': ('EUR')    //Currency after conversion or default value
+  };
+  const result = start(opts)
+  expect(result).toEqual(nock.get)
 });
 
 test('convert 1 USD to USD', async () => {
@@ -60,7 +66,7 @@ test('convert 1 BTC to EUR', async () => {
 });
 
 test('convert without arguments', async () => {
-  throw new Error('test not yet defined... remove the throw and write your test here');
+
 });
 
 test('convert with amount only', async () => {
