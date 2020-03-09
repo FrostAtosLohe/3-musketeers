@@ -6,6 +6,10 @@ const ora = require('ora');
 const argv = process.argv.slice(2);		//Get information typed after calling cli.js
 //2 : discard the path to node and path to script then return everything else that was typed on the command line
 
+module.exports = function sum(a, b) {
+  return a + b;
+};
+
 //help using "node cli.js --help"
 function help () {
   console.log(
